@@ -1,0 +1,451 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 80px 160px;
+    background-color: hsl(229, 24%, 87%);
+    color: hsl(213, 96%, 18%);
+}
+
+.mobile{
+    display: none;
+}
+button{
+    padding: 7px 16px;
+    color: hsl(229, 24%, 87%);
+    border: 2px solid hsl(213, 96%, 18%);
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+button:hover{
+    background-color: hsl(213, 90%, 25%);
+    border-color: hsl(213, 90%, 25%);
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+a:hover{
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+.a{
+    opacity: 0;
+}
+.field{
+    color:rgb(255, 2, 2);
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.step-color{
+    background-color: hsl(229, 24%, 87%);
+    color: black;
+    font-weight: 500;
+}
+.sub-props{
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(229, 24%, 87%);
+}
+
+
+main{
+    background-color: hsl(229, 24%, 87%);
+}
+.container{
+    padding: 13px;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.sidebar{
+    background-image: url("./assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 32px 80px 135px 32px;
+    color: white;
+}
+.side{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.step-detail{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+.step{
+    color: hsl(229, 24%, 87%);
+    font-size: 14px;
+}
+.detail{
+    font-weight: 500;
+}
+.step-num{
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.fillings{
+    margin: auto;
+    padding: 0 32px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    font-weight: 500;
+}
+input{
+    margin-top: 5px;
+    padding: 8px 16px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 7px;
+    cursor: pointer;
+}
+.info-input:focus{
+    outline: 1px solid hsl(243, 100%, 62%);
+}
+.info-input{
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+.next-btn{
+    margin: 112px 0 16px 0;
+}
+
+.subs{
+    display: flex;
+    margin-top: 32px;
+}
+.sub{
+    width: 110px;
+}
+.sub, .add-on{
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.sub:hover, .add-on:hover{
+    border-color: hsl(243, 100%, 62%);
+}
+.sub-det{
+    font-weight: 500;
+}
+.small{
+    font-size: 14px;
+    color: hsl(231, 3%, 48%);
+}
+.check{
+    display: flex;
+    margin-right: 16px;
+}
+.check input{
+    margin-right: 13px;
+    width: 20px;
+}
+.add-on{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-on-head{
+    font-weight: 700;
+}
+.step3 .next-btn{
+    margin-top: 64px;
+}
+.advanced{
+    margin: auto 16px;
+}
+.larger{
+    margin: 16px auto;
+}
+.mon-year{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(231, 100%, 99%);
+    border-radius: 7px;
+}
+.deskt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finishing{
+    background-color: hsl(217, 100%, 97%);
+    padding: 0 12px 4px 12px;
+    border-radius: 10px;
+}
+.finish{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sub-clicked, #duration-clicked{
+    font-weight: 500;
+}
+.add-on-checked{
+    font-size: 14px;
+}
+.step2 .mo, .step2 .yr{
+    font-size: 14px;
+    color: hsl(240, 0%, 60%);
+}
+.add-title{
+    color: hsl(240, 0%, 60%);
+}
+.checked{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total{
+    padding: 0 12px;
+    margin-top: 8px;
+}
+.per-time, .total-amount{
+    display: flex;
+}
+.per-time .mo, .per-time .yr{
+    margin-left: 3px;
+}
+.total-amount{
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(243, 100%, 62%);
+}
+.step4 button{
+    background-color: hsl(243, 100%, 62%);
+    border-color: hsl(243, 100%, 62%);
+    color: white;
+    transition: all 0.3s;
+}
+.step4 button:hover{
+    background-color: hsl(228, 100%, 84%);
+    border-color: hsl(228, 100%, 84%);
+}
+.sub-chosen .step-detail span a{
+    text-decoration: underline;
+}
+
+.step5 .fill{
+    text-align: center;
+    padding: 16px 96px;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        margin: 80px;
+    }
+    .sidebar{
+        padding: 32px 32px 32px 32px;
+    }
+    .next-btn{
+        margin: 5px;
+    }
+    .fillings{
+        padding: 0 16px;
+    }
+    .sub{
+        width: 70px;
+        padding-bottom: 0;
+    }
+    .check{
+        margin-right: 8px;
+    }
+    .add-on{
+        padding: 0 8px;
+    }
+    .larger{
+        margin: 8px auto;
+    }
+    .step3 .next-btn{
+        margin-top: 8px;
+    }
+    .total{
+        margin-top: 0;
+    }
+    .step5 .fill{
+        padding: 16px 32px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    body{
+        margin: 0;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    button{
+        padding: 7px 13px;
+    }
+    .container{
+        padding: 0;
+        flex-direction: column;
+        background-color: hsl(229, 24%, 87%);
+        border-radius: 0;
+    }
+    .sidebar{
+        display: flex;
+        justify-content: center;
+        background-image: url("./assets/images/bg-sidebar-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 32px 0 96px 0;
+    }
+    .fillings{
+        margin: 0;
+        padding: 0;
+    }
+    .fill{
+        padding: 32px 16px;
+        border-radius: 10px;
+        background-color: white;
+        position: relative;
+        top: -5.5rem;
+        margin: auto 16px;
+        -webkit-box-shadow: 0px 11px 11px -3px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 11px 11px -3px rgba(0,0,0,0.25);
+        box-shadow: 0px 11px 11px -3px rgba(0,0,0,0.25);
+    }
+    .subs{
+        flex-direction: column;
+    }
+    .sub{
+        display: flex;
+        width: auto;
+        padding: 8px 16px;
+    }
+    .sub img{
+        margin-right: 16px;
+    }
+    .advanced{
+        margin: 16px 0;
+    }
+    .larger{
+        margin: 16px auto;
+    }
+    .mobi{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .next-btn{
+        background-color: white;
+        margin: -4rem 0 0 0;
+        padding: 8px;
+    }
+    .step1 .next-btn, .step4 .next-btn{
+        margin-top: 16px;
+    }
+    .step5 .fill{
+        padding: 16px 24px;
+    }
+    .total{
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .sidebar{
+        background-size: auto;
+    }
+}
+
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  margin: auto 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(213, 96%, 18%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.attribution {
+    margin-top: 32px;
+    font-size: 14px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
